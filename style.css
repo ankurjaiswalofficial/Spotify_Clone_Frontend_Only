@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+}
+header img {
+  width: 120px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #pageNav {
+  width: 40%;
+}
+header #authNav {
+  width: 20%;
+}
+
+.largerIcon {
+  font-size: 2rem !important;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #444343;
+}
+footer #dataHandler {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20%;
+}
+footer #dataHandler #dataImageHandlerDiv {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: aquamarine;
+  background-image: url("./images/spotifyDark.jpg");
+  background-size: 100% 100%;
+}
+footer #dataHandler label {
+  margin-left: 10px;
+  max-width: 70px;
+  font-size: smaller;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+footer #handleBar {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer #handleBar #handlerButtonBar {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer #handleBar #handlerButtonBar i {
+  margin: 10px;
+  font-size: large;
+}
+footer #handleBar #handlerSliderBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer #handleBar #handlerSliderBar h5 {
+  font-size: medium;
+  padding: 0px 10px;
+}
+footer #handleBar #handlerSliderBar input {
+  width: 70%;
+}
+footer #moreHandlers {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20%;
+}
+footer #moreHandlers i {
+  margin: 10px;
+  font-size: large;
+}
+footer #moreHandlers input {
+  width: 100%;
+  max-width: 120px;
+}/*# sourceMappingURL=style.css.map */

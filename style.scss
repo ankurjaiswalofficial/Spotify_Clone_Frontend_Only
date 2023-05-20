@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+// .fa{
+//     color: rgb(24, 194, 41);    
+// }
+
+body {
+    background-color: black;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+
+    img {
+        width: 120px;
+    }
+
+    ;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ;
+
+    #pageNav {
+        width: 40%;
+    }
+
+    #authNav {
+        width: 20%;
+    }
+}
+
+.largerIcon{
+    font-size: 2rem !important;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #444343;
+    #dataHandler {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 20%;
+        #dataImageHandlerDiv {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            background-color: aquamarine;
+            background-image: url("./images/spotifyDark.jpg");
+            background-size: 100% 100%;
+        }
+        label{
+            margin-left: 10px;
+            max-width: 70px;
+            font-size: smaller;
+            white-space: nowrap;
+            overflow-x: scroll;
+        }
+    }
+
+    #handleBar {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #handlerButtonBar {
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                margin: 10px;
+                font-size: large;
+            }
+        }
+
+        #handlerSliderBar {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h5 {
+                font-size: medium;
+                padding: 0px 10px;
+            }
+
+            input {
+                width: 70%;
+            }
+        }
+    }
+
+    #moreHandlers {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 20%;
+        i {
+            margin: 10px;
+            font-size: large;
+        }
+
+        input {
+            width: 100%;
+            max-width: 120px;
+        }
+    }
+}

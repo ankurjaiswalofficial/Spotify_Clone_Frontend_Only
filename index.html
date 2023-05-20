@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Spotify Clone - Ankur Jaiswal</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/spotify.png" alt="Spotify Logo">
+        <nav id="pageNav">
+            <span>Home</span>
+            <span>Search</span>
+            <span>About</span>
+        </nav>
+        <nav id="authNav">
+            <span>Sign Up</span>
+            <span>Log In</span>
+        </nav>
+    </header>
+
+    <div id="main">
+
+    </div>
+    <footer>
+        <div id="dataHandler">
+            <div id="dataImageHandlerDiv"></div>
+            <label for="dataImageHandlerDiv">AUDIONAME</label>
+        </div>
+        <div id="handleBar">
+            <div id="handlerButtonBar">
+                <i id="shuffle" class="fa fa-random"  aria-hidden="true"></i>
+                <i id="backward" class="fa fa-backward" aria-hidden="true"></i>
+                <i id="play" class="largerIcon fa fa-play-circle" aria-hidden="true"></i>
+                <i id="pause" class="largerIcon fa fa-pause-circle" aria-hidden="true"></i>
+                <i id="forward" class="fa fa-forward" aria-hidden="true"></i>
+                <i id="repeat" class="fa fa-repeat" aria-hidden="true"></i>
+            </div>
+            <div id="handlerSliderBar">
+                <h5 id="timmerStart">-:--</h5>
+                <input type="range" name="timmer" min="0" max="100" value="0" id="timmer" />
+                <h5 id="timmerEnd">-:--</h5>
+            </div>
+        </div>
+        <div id="moreHandlers">
+            <i class="fa fa-volume-up" aria-hidden="true"></i>
+            <!-- <i class="fa fa-volume-down" aria-hidden="true"></i>
+            <i class="fa fa-volume-off" aria-hidden="true"></i> -->
+            <input type="range" name="volumeHandler" min="0" max="100" value="0" id="volumeHandler" />
+        </div>
+    </footer>
+</body>
+
+</html>
