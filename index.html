@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <title>Spotify Clone - Ankur Jaiswal</title>
 </head>
 
@@ -30,16 +31,22 @@
     <footer>
         <div id="dataHandler">
             <div id="dataImageHandlerDiv"></div>
-            <label for="dataImageHandlerDiv">AUDIONAME</label>
+            <div id="info">
+                <label id="fileName" for="dataImageHandlerDiv">AUDIONAME</label>
+                <label id="fileInfo" for="info">AUTHOR</label>
+            </div>
+            <i id="heart" class="bi bi-heart" aria-hidden="true"></i>
+
         </div>
         <div id="handleBar">
             <div id="handlerButtonBar">
-                <i id="shuffle" class="fa fa-random"  aria-hidden="true"></i>
-                <i id="backward" class="fa fa-backward" aria-hidden="true"></i>
-                <i id="play" class="largerIcon fa fa-play-circle" aria-hidden="true"></i>
-                <i id="pause" class="largerIcon fa fa-pause-circle" aria-hidden="true"></i>
-                <i id="forward" class="fa fa-forward" aria-hidden="true"></i>
-                <i id="repeat" class="fa fa-repeat" aria-hidden="true"></i>
+                <i id="shuffle" class="bi bi-shuffle" aria-hidden="true"></i>
+                <i id="backward" class="bi bi-fast-forward" aria-hidden="true"></i>
+                <i id="play" class="largerIcon bi bi-play-circle" aria-hidden="true"></i>
+                <!-- <i id="pause" class="largerIcon bi bi-pause-circle" aria-hidden="true"></i> -->
+                <i id="forward" class="bi bi-fast-forward" aria-hidden="true"></i>
+                <i id="repeat" class="bi bi-repeat" aria-hidden="true"></i>
+                <!-- <i id="repeat1" class="bi bi-repeat-1" aria-hidden="true"></i> -->
             </div>
             <div id="handlerSliderBar">
                 <h5 id="timmerStart">-:--</h5>
@@ -48,9 +55,12 @@
             </div>
         </div>
         <div id="moreHandlers">
-            <i class="fa fa-volume-up" aria-hidden="true"></i>
-            <!-- <i class="fa fa-volume-down" aria-hidden="true"></i>
-            <i class="fa fa-volume-off" aria-hidden="true"></i> -->
+            <i class="bi bi-brush"></i>
+            <i class="bi bi-pc-display"></i>
+            <i class="bi bi-menu-button-wide"></i>
+            <i class="bi bi-volume-up-fill" aria-hidden="true"></i>
+            <!-- <i class="bi bi-volume-down-fill" aria-hidden="true"></i>
+            <i class="bi bi-volume-mute" aria-hidden="true"></i> -->
             <input type="range" name="volumeHandler" min="0" max="100" value="0" id="volumeHandler" />
         </div>
     </footer>

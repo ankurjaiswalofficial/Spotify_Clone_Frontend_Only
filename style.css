@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -52,7 +53,7 @@ footer #dataHandler {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 20%;
+  width: 25%;
 }
 footer #dataHandler #dataImageHandlerDiv {
   width: 60px;
@@ -62,15 +63,29 @@ footer #dataHandler #dataImageHandlerDiv {
   background-image: url("./images/spotifyDark.jpg");
   background-size: 100% 100%;
 }
-footer #dataHandler label {
+footer #dataHandler #info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-left: 10px;
-  max-width: 70px;
-  font-size: smaller;
+}
+footer #dataHandler #info label {
+  font-size: 14px;
   white-space: nowrap;
-  overflow-x: scroll;
+}
+footer #dataHandler #info #fileName {
+  font-weight: bold;
+}
+footer #dataHandler #info #fileInfo {
+  font-size: 10px;
+}
+footer #dataHandler i {
+  margin-left: 15px;
+  font-size: medium;
 }
 footer #handleBar {
-  width: 60%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,6 +101,9 @@ footer #handleBar #handlerButtonBar {
 footer #handleBar #handlerButtonBar i {
   margin: 10px;
   font-size: large;
+}
+footer #handleBar #handlerButtonBar #backward {
+  rotate: 180deg;
 }
 footer #handleBar #handlerSliderBar {
   width: 100%;
@@ -104,13 +122,12 @@ footer #moreHandlers {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 20%;
+  width: 25%;
 }
 footer #moreHandlers i {
-  margin: 10px;
-  font-size: large;
+  margin-left: 15px;
+  font-size: medium;
 }
 footer #moreHandlers input {
-  width: 100%;
-  max-width: 120px;
+  max-width: 100px;
 }/*# sourceMappingURL=style.css.map */

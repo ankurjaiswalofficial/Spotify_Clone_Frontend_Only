@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 // .fa{
 //     color: rgb(24, 194, 41);    
 // }
@@ -45,9 +47,10 @@ header {
     }
 }
 
-.largerIcon{
+.largerIcon {
     font-size: 2rem !important;
 }
+
 footer {
     position: absolute;
     width: 100%;
@@ -57,11 +60,13 @@ footer {
     justify-content: space-between;
     align-items: center;
     background: #444343;
+
     #dataHandler {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        width: 20%;
+        width: 25%;
+
         #dataImageHandlerDiv {
             width: 60px;
             height: 60px;
@@ -70,17 +75,36 @@ footer {
             background-image: url("./images/spotifyDark.jpg");
             background-size: 100% 100%;
         }
-        label{
+
+        #info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             margin-left: 10px;
-            max-width: 70px;
-            font-size: smaller;
-            white-space: nowrap;
-            overflow-x: scroll;
+
+            label {
+                font-size: 14px;
+                white-space: nowrap;
+            }
+
+            #fileName {
+                font-weight: bold;
+            }
+
+            #fileInfo {
+                font-size: 10px;
+            }
+        }
+
+        i {
+            margin-left: 15px;
+            font-size: medium;
         }
     }
 
     #handleBar {
-        width: 60%;
+        width: 40%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -95,6 +119,10 @@ footer {
             i {
                 margin: 10px;
                 font-size: large;
+            }
+
+            #backward {
+                rotate: 180deg;
             }
         }
 
@@ -119,15 +147,16 @@ footer {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        width: 20%;
+        width: 25%;
+
         i {
-            margin: 10px;
-            font-size: large;
+            margin-left: 15px;
+            font-size: medium;
         }
 
         input {
-            width: 100%;
-            max-width: 120px;
+            // width: 100%;
+            max-width: 100px;
         }
     }
 }
