@@ -12,58 +12,68 @@
 </head>
 
 <body>
-    <header>
-        <img src="./images/spotify.png" alt="Spotify Logo">
-        <nav id="pageNav">
-            <span>Home</span>
-            <span>Search</span>
-            <span>About</span>
-        </nav>
-        <nav id="authNav">
-            <span>Sign Up</span>
-            <span>Log In</span>
-        </nav>
-    </header>
-
-    <div id="main">
-
-    </div>
-    <footer>
-        <div id="dataHandler">
-            <div id="dataImageHandlerDiv"></div>
-            <div id="info">
-                <label id="fileName" for="dataImageHandlerDiv">AUDIONAME</label>
-                <label id="fileInfo" for="info">AUTHOR</label>
-            </div>
-            <i id="heart" class="bi bi-heart" aria-hidden="true"></i>
-
+    <div id="MainContainer">
+        <header>
+            <img src="./images/spotify.png" alt="Spotify Logo">
+            <nav id="pageNav">
+                <div class="navItem">
+                    <i class="bi bi-house-door-fill"></i>
+                    <span>Home</span>
+                </div>
+                <di class="navItem">
+                    <i class="bi bi-search"></i>
+                    <span>Search</span>
+                </di>
+                <!-- <span>About</span> -->
+            </nav>
+            <nav id="library">
+                <span>Sign Up</span>
+                <span>Log In</span>
+            </nav>
+        </header>
+        <div id="main">
+            <h3>Good Morning Ankur</h3>
         </div>
-        <div id="handleBar">
-            <div id="handlerButtonBar">
-                <i id="shuffle" class="bi bi-shuffle" aria-hidden="true"></i>
-                <i id="backward" class="bi bi-fast-forward" aria-hidden="true"></i>
-                <i id="play" class="largerIcon bi bi-play-circle" aria-hidden="true"></i>
-                <!-- <i id="pause" class="largerIcon bi bi-pause-circle" aria-hidden="true"></i> -->
-                <i id="forward" class="bi bi-fast-forward" aria-hidden="true"></i>
-                <i id="repeat" class="bi bi-repeat" aria-hidden="true"></i>
-                <!-- <i id="repeat1" class="bi bi-repeat-1" aria-hidden="true"></i> -->
+
+        <footer>
+            <div id="dataHandler">
+                <div id="dataImageHandlerDiv"></div>
+                <div id="info">
+                    <label id="fileName" for="dataImageHandlerDiv">AUDIONAME</label>
+                    <label id="fileInfo" for="info">AUTHOR</label>
+                </div>
+                <i id="heart" class="bi bi-heart" aria-hidden="true"></i>
+
             </div>
-            <div id="handlerSliderBar">
-                <h5 id="timmerStart">-:--</h5>
-                <input type="range" name="timmer" min="0" max="100" value="0" id="timmer" />
-                <h5 id="timmerEnd">-:--</h5>
-            </div>
-        </div>
-        <div id="moreHandlers">
-            <i class="bi bi-brush"></i>
-            <i class="bi bi-pc-display"></i>
-            <i class="bi bi-menu-button-wide"></i>
-            <i class="bi bi-volume-up-fill" aria-hidden="true"></i>
-            <!-- <i class="bi bi-volume-down-fill" aria-hidden="true"></i>
+            <div id="onlyHandlers">
+                <div id="handleBar">
+                    <div id="handlerButtonBar">
+                        <i id="shuffle" class="bi bi-shuffle" aria-hidden="true"></i>
+                        <i id="backward" class="bi bi-fast-forward" aria-hidden="true"></i>
+                        <i id="play" class="largerIcon bi bi-play-circle" aria-hidden="true"></i>
+                        <!-- <i id="pause" class="largerIcon bi bi-pause-circle" aria-hidden="true"></i> -->
+                        <i id="forward" class="bi bi-fast-forward" aria-hidden="true"></i>
+                        <i id="repeat" class="bi bi-repeat" aria-hidden="true"></i>
+                        <!-- <i id="repeat1" class="bi bi-repeat-1" aria-hidden="true"></i> -->
+                    </div>
+                    <div id="handlerSliderBar">
+                        <h5 id="timmerStart">-:--</h5>
+                        <input type="range" name="timmer" min="0" max="100" value="0" id="timmer" />
+                        <h5 id="timmerEnd">-:--</h5>
+                    </div>
+                </div>
+                <div id="moreHandlers">
+                    <i class="bi bi-brush"></i>
+                    <i class="bi bi-pc-display"></i>
+                    <i class="bi bi-menu-button-wide"></i>
+                    <i class="bi bi-volume-up-fill" aria-hidden="true"></i>
+                    <!-- <i class="bi bi-volume-down-fill" aria-hidden="true"></i>
             <i class="bi bi-volume-mute" aria-hidden="true"></i> -->
-            <input type="range" name="volumeHandler" min="0" max="100" value="0" id="volumeHandler" />
-        </div>
-    </footer>
+                    <input type="range" name="volumeHandler" min="0" max="100" value="0" id="volumeHandler" />
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
