@@ -104,9 +104,10 @@ header {
     width: calc(100% - 150px);
     max-width: 400px;
     height: 100%;
+    // max-height: calc(100vh - 270px);
     margin-right: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
 
@@ -151,11 +152,11 @@ header {
     #library {
         width: 100%;
         height: 100%;
-        max-height: 700px;
+        max-height: calc(100%);
         border-radius: 15px;
         background-color: #1e1e1e;
         margin: 5px 0px 0px 0px;
-        justify-content: unset;
+        justify-content: flex-start;
 
         #libraryMainHeader {
             width: 100%;
@@ -270,7 +271,7 @@ header {
         #playlistsHolder {
             width: 100%;
             height: 80%;
-            max-height: calc(100vh - 50vh);
+            max-height: calc(100vh - 420px);
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -339,6 +340,7 @@ header {
                     }
 
                     .playlistSpeaker {
+                        display: none;
                         margin: 10px;
                         font-size: larger;
                         padding-right: 10px;
