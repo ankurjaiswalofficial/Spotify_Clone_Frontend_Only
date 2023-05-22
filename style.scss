@@ -155,6 +155,202 @@ header {
         border-radius: 15px;
         background-color: #1e1e1e;
         margin: 5px 0px 0px 0px;
+        justify-content: unset;
+
+        #libraryMainHeader {
+            width: 100%;
+            // height: 20%;
+            padding: 5px;
+            top: 0;
+            // box-shadow: 0px 10px 30px #000;
+
+            #libraryHeader {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    i {
+                        margin-right: 10px;
+                        font-size: 24px;
+                        font-weight: bolder;
+                    }
+
+                }
+            }
+
+            #playlistOptions {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+
+                .scroller {
+                    i {
+                        // padding: 10px;
+                        background-color: #000000;
+                        padding: 10px 12px;
+                        border-radius: 50%;
+                        font-weight: bolder;
+                    }
+                }
+
+                #horizontalFilter {
+                    width: 400px;
+                    height: fit-content;
+                    white-space: nowrap;
+                    overflow-x: hidden;
+                    overflow-y: hidden;
+                    display: flex;
+
+                    span {
+                        text-align: center;
+                        padding: 8px 10px;
+                        background: #000000;
+                        margin: 5px;
+                        border-radius: 15px;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            #playlistHandlerHeader {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+
+                #playlistSearch {
+                    button {
+                        display: block;
+                        outline: none;
+                        border: none;
+                        background-color: #000000;
+                        border-radius: 50%;
+                        padding: 10px;
+                        cursor: pointer;
+                    }
+
+                    #playlistSearchHolder {
+                        display: none;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #000000;
+                        border-radius: 15px;
+                        padding: 5px 5px;
+
+                        i {
+                            margin-left: 10px;
+                        }
+
+                        input {
+                            margin: 0;
+                            padding: 5px;
+                            background-color: #000;
+                            outline: none;
+                            border: none;
+                            border-radius: 15px;
+                            color: #fff;
+                        }
+
+                        input::placeholder {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                #playlistSorter {}
+            }
+        }
+
+        #playlistsHolder {
+            width: 100%;
+            height: 80%;
+            max-height: calc(100vh - 50vh);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            .playlist_ {
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+                margin: 5px;
+
+                .imageHolder {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 15px;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .playlistData {
+                    width: calc(100% - 75px);
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .infoContent {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        width: 80%;
+
+                        h3 {
+                            font-size: 14px;
+                        }
+
+                        .playlistDataInfo {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+
+                            button {
+                                margin: 5px;
+                                margin-left: 0px;
+                                outline: none;
+                                border: none;
+                                background-color: transparent;
+                                font-size: small;
+
+                                i {
+                                    color: #fff;
+                                }
+                            }
+
+                            h5 {
+                                white-space: nowrap;
+
+                            }
+                        }
+                    }
+
+                    .playlistSpeaker {
+                        margin: 10px;
+                        font-size: larger;
+                        padding-right: 10px;
+                    }
+                }
+            }
+
+            .playlist_:hover {
+                background-color: #615e5e;
+                border-radius: 15px;
+            }
+        }
     }
 }
 
