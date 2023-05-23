@@ -308,6 +308,128 @@ header #library #playlistsHolder .playlist_:hover {
   border-radius: 15px;
   background-color: #1e1e1e;
 }
+#main #mainSidebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main #mainSidebar #navigationHandler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main #mainSidebar #navigationHandler button {
+  outline: none;
+  border: none;
+  background-color: #000;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 5px;
+}
+#main #mainSidebar #navigationHandler button i {
+  padding: 5px;
+}
+#main #mainSidebar #premium {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main #mainSidebar #premium #privateModeListening,
+#main #mainSidebar #premium #upgrade,
+#main #mainSidebar #premium #account {
+  padding: 10px;
+  margin: 5px;
+  background: skyblue;
+  border-radius: 15px;
+}
+#main #mainSidebar #premium #privateModeListening span,
+#main #mainSidebar #premium #upgrade span,
+#main #mainSidebar #premium #account span {
+  display: none;
+}
+#main #mainSidebar #premium #upgrade {
+  color: #000;
+  background-color: #fff;
+}
+#main #mainSidebar #premium #account {
+  outline: none;
+  border: none;
+  background-color: #000;
+}
+#main #mainScroller {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#main #mainScroller #greeting {
+  margin: 15px;
+  font-size: 28px;
+}
+#main #mainScroller #mainPlaylistHolder {
+  display: grid;
+  grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%;
+  width: 100%;
+}
+#main #mainScroller #mainPlaylistHolder .playlist_main {
+  width: 100%;
+  max-width: 350px;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px 15px;
+  border-radius: 10px;
+  background-color: rgba(55, 88, 221, 0.2392156863);
+}
+#main #mainScroller #mainPlaylistHolder .playlist_main .imageHolder .img {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  border-radius: 10px 0px 0px 10px;
+  background-image: url("./images/spotifyDark.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#main #mainScroller #mainPlaylistHolder .playlist_main .playlistData {
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#main #mainScroller #mainPlaylistHolder .playlist_main .playlistData h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+#main #mainScroller #mainPlaylistHolder .playlist_main .playlistData .playlist_PLayer {
+  display: none;
+  height: 48px;
+  width: 48px;
+  margin: 10px;
+  font-size: 48px;
+  border-radius: 50%;
+  background-color: #000000;
+  box-shadow: 0px 3px 3px #000;
+}
+#main #mainScroller #mainPlaylistHolder .playlist_main .playlistData .playlist_PLayer div {
+  margin-top: -10px;
+}
+#main #mainScroller #mainPlaylistHolder .playlist_main .playlistData .playlist_PLayer div i {
+  color: #129731;
+}
+#main #mainScroller #mainPlaylistHolder .playlist_main .playlistData .playlist_PLayer:hover {
+  height: 50px;
+  width: 50px;
+  font-size: 50px;
+  box-shadow: 0px 5px 5px #000;
+}
+#main #mainScroller #mainPlaylistHolder .playlist_main:hover {
+  background-color: rgba(46, 179, 46, 0.4078431373);
+}
+#main #mainScroller #mainPlaylistHolder .playlist_main:hover .playlist_PLayer {
+  display: block;
+}
 
 .largerIcon {
   font-size: 2rem !important;
