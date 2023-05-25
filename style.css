@@ -4,8 +4,27 @@
   box-sizing: border-box;
   color: #fff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
   /* Input Thumb */
   /* Input Track */
+}
+* ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+* ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+* ::-webkit-scrollbar-thumb {
+  background: rgb(54, 53, 53);
+  border-radius: 10px;
+}
+* ::-webkit-scrollbar-thumb:hover {
+  background: #5e5c5c;
 }
 * input[type=range] {
   -webkit-appearance: none;
@@ -87,8 +106,7 @@ body {
 }
 
 header {
-  width: calc(100% - 150px);
-  max-width: 325px;
+  max-width: 300px;
   height: 100%;
   margin-right: 5px;
   display: flex;
@@ -302,6 +320,7 @@ header #library #playlistsHolder .playlist_:hover {
 
 #main {
   width: 100%;
+  max-width: calc(100% - 300px);
   height: 100%;
   margin-left: 5px;
   box-shadow: inset 0px 130px 160px 0px rgba(110, 23, 110, 0.65);
@@ -435,6 +454,60 @@ header #library #playlistsHolder .playlist_:hover {
 }
 #main #mainScroller #mainPlaylistHolder .playlist_main:hover .playlist_PLayer {
   display: block;
+}
+#main #mainScroller .suggestedPlaylistHolder {
+  width: 100%;
+  height: 300px;
+  padding: 0px 10px;
+  margin-top: 25px;
+}
+#main #mainScroller .suggestedPlaylistHolder .suggestedPlayListHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+}
+#main #mainScroller .suggestedPlaylistHolder .suggestedPlayListHeader h3 {
+  font-size: large;
+}
+#main #mainScroller .suggestedPlaylistHolder .playlistsStack {
+  width: calc(100% - 5px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+#main #mainScroller .suggestedPlaylistHolder .playlistsStack .playlistCard {
+  width: 160px;
+  height: 235px;
+  border-radius: 15px;
+  background-color: #313432;
+  margin: 10px;
+  padding: 10px;
+}
+#main #mainScroller .suggestedPlaylistHolder .playlistsStack .playlistCard .playlistCardImage {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 10px;
+  background: url("./images/spotifyDark.jpg");
+  background-size: 100% 100%;
+  border-radius: 15px;
+}
+#main #mainScroller .suggestedPlaylistHolder .playlistsStack .playlistCard .playlistCardContent {
+  width: 100%;
+  padding-left: 10px;
+}
+#main #mainScroller .suggestedPlaylistHolder .playlistsStack .playlistCard .playlistCardContent .playlistCardContentTopic {
+  padding-bottom: 5px;
+  font-weight: bolder;
+}
+#main #mainScroller .suggestedPlaylistHolder .playlistsStack .playlistCard .playlistCardContent .playlistCardDescription {
+  font-size: 13px;
+  line-height: 18px;
+  width: 100%;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .largerIcon {
