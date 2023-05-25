@@ -235,7 +235,7 @@ header #library #playlistsHolder {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 header #library #playlistsHolder .playlist_ {
@@ -361,15 +361,21 @@ header #library #playlistsHolder .playlist_:hover {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  height: 100%;
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 #main #mainScroller #greeting {
   margin: 15px;
   font-size: 28px;
 }
 #main #mainScroller #mainPlaylistHolder {
-  display: grid;
-  grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 #main #mainScroller #mainPlaylistHolder .playlist_main {
   width: 100%;
