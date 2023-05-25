@@ -410,9 +410,7 @@ header {
     max-width: calc(100% - 300px);
     height: 100%;
     margin-left: 5px;
-    -webkit-box-shadow: inset 0px 130px 160px 0px rgba(110, 23, 110, 0.65);
-    -moz-box-shadow: inset 0px 130px 160px 0px rgba(110, 23, 110, 0.65);
-    box-shadow: inset 0px 130px 160px 0px rgba(110, 23, 110, 0.65);
+    // box-shadow: inset 0px 130px 160px 0px rgba(110, 23, 110, 0.65);
     border-radius: var(--border_radius);
     background-color: var(--black_bg);
 
