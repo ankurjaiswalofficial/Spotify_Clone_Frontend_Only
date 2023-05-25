@@ -1,8 +1,24 @@
+:root {
+  --blue: #1e90ff;
+  --green: #29bd4c;
+  --green_dark: #129731;
+  --white: #fff;
+  --dark_black: #000;
+  --black_state: #1f1f1f;
+  --black_hover: #3a3c3b;
+  --black_bg: #141313;
+  --black_iconic: #302d2d;
+  --black_iconic_dark: #1c181c;
+  --border_radius: 15px;
+  --playlist_bg: #45474d3d;
+  --playlist_hover_bg: #2eb32e68;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #fff;
+  color: var(--white);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   /* width */
   /* Track */
@@ -20,80 +36,90 @@
   border-radius: 10px;
 }
 * ::-webkit-scrollbar-thumb {
-  background: rgb(54, 53, 53);
+  background: var(--black_state);
   border-radius: 10px;
 }
 * ::-webkit-scrollbar-thumb:hover {
-  background: #5e5c5c;
+  background: var(--black_hover);
 }
 * input[type=range] {
   -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   margin-right: 15px;
   width: 200px;
   height: 0.3rem;
   background: rgb(39, 39, 39);
   border-radius: 5px;
-  background-image: linear-gradient(#fff, #fff);
+  background-image: linear-gradient(var(--white), var(--white));
   background-size: 7% 100%;
   background-repeat: no-repeat;
 }
 * input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
+  appearance: none;
   height: 0.75rem;
   width: 0.75rem;
   border-radius: 50%;
-  background: #fff;
+  background: var(--white);
   cursor: pointer;
 }
 * input[type=range]::-moz-range-thumb {
   -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   height: 0.8rem;
   width: 0.8rem;
   border-radius: 50%;
-  background: #fff;
+  background: var(--white);
   cursor: pointer;
 }
 * input[type=range]::-ms-thumb {
   -webkit-appearance: none;
+  appearance: none;
   height: 0.8rem;
   width: 0.8rem;
   border-radius: 50%;
-  background: #fff;
+  background: var(--white);
   cursor: pointer;
 }
 * input[type=range]::-webkit-slider-thumb:hover {
-  background: #29bd4c;
+  background: var(--green);
 }
 * input[type=range]::-moz-range-thumb:hover {
-  background: #29bd4c;
+  background: var(--green);
 }
 * input[type=range]::-ms-thumb:hover {
-  background: #29bd4c;
+  background: var(--green);
 }
 * input[type=range]:hover {
-  background-image: linear-gradient(#29bd4c, #29bd4c);
+  background-image: linear-gradient(var(--green), var(--green));
 }
 * input[type=range]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
+  appearance: none;
   box-shadow: none;
   border: none;
   background: transparent;
 }
 * input[type=range]::-moz-range-track {
   -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   box-shadow: none;
   border: none;
   background: transparent;
 }
 * input[type=range]::-ms-track {
   -webkit-appearance: none;
+  appearance: none;
   box-shadow: none;
   border: none;
   background: transparent;
 }
 
 body {
-  background-color: black;
+  background-color: var(--dark_black);
 }
 
 #MainContainer {
@@ -127,8 +153,8 @@ header nav {
 }
 header #pageNav {
   width: 100%;
-  border-radius: 15px;
-  background-color: #1e1e1e;
+  border-radius: var(--border_radius);
+  background-color: var(--black_bg);
   margin: 5px 0px;
   padding: 0px 20px;
   height: 120px;
@@ -150,8 +176,8 @@ header #library {
   width: 100%;
   height: 100%;
   max-height: 100%;
-  border-radius: 15px;
-  background-color: #1e1e1e;
+  border-radius: var(--border_radius);
+  background-color: var(--black_bg);
   margin: 5px 0px 0px 0px;
   justify-content: flex-start;
 }
@@ -182,7 +208,7 @@ header #library #libraryMainHeader #playlistOptions {
   margin-top: 10px;
 }
 header #library #libraryMainHeader #playlistOptions .scroller i {
-  background-color: #000000;
+  background-color: var(--black_iconic);
   padding: 10px 12px;
   border-radius: 50%;
   font-weight: bolder;
@@ -199,9 +225,9 @@ header #library #libraryMainHeader #playlistOptions #horizontalFilter {
 header #library #libraryMainHeader #playlistOptions #horizontalFilter span {
   text-align: center;
   padding: 8px 10px;
-  background: #000000;
+  background: var(--black_iconic);
   margin: 5px;
-  border-radius: 15px;
+  border-radius: var(--border_radius);
   font-size: 14px;
 }
 header #library #libraryMainHeader #playlistHandlerHeader {
@@ -214,7 +240,7 @@ header #library #libraryMainHeader #playlistHandlerHeader #playlistSearch button
   display: block;
   outline: none;
   border: none;
-  background-color: #000000;
+  background-color: var(--black_iconic);
   border-radius: 50%;
   padding: 10px;
   cursor: pointer;
@@ -223,8 +249,8 @@ header #library #libraryMainHeader #playlistHandlerHeader #playlistSearch #playl
   display: none;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
-  border-radius: 15px;
+  background-color: var(--black_iconic);
+  border-radius: var(--border_radius);
   padding: 5px 5px;
 }
 header #library #libraryMainHeader #playlistHandlerHeader #playlistSearch #playlistSearchHolder i {
@@ -233,17 +259,17 @@ header #library #libraryMainHeader #playlistHandlerHeader #playlistSearch #playl
 header #library #libraryMainHeader #playlistHandlerHeader #playlistSearch #playlistSearchHolder input {
   margin: 0;
   padding: 5px;
-  background-color: #000;
+  background-color: var(--black_iconic);
   outline: none;
   border: none;
-  border-radius: 15px;
-  color: #fff;
+  border-radius: var(--border_radius);
+  color: var(--white);
 }
 header #library #libraryMainHeader #playlistHandlerHeader #playlistSearch #playlistSearchHolder input::-moz-placeholder {
-  color: #fff;
+  color: var(--white);
 }
 header #library #libraryMainHeader #playlistHandlerHeader #playlistSearch #playlistSearchHolder input::placeholder {
-  color: #fff;
+  color: var(--white);
 }
 header #library #playlistsHolder {
   width: 100%;
@@ -265,11 +291,13 @@ header #library #playlistsHolder .playlist_ {
   align-items: center;
   padding: 5px;
   margin: 5px;
+  border-radius: var(--border_radius);
+  background-color: var(--black_state);
 }
 header #library #playlistsHolder .playlist_ .imageHolder img {
   width: 60px;
   height: 60px;
-  border-radius: 15px;
+  border-radius: var(--border_radius);
   margin-bottom: 0;
 }
 header #library #playlistsHolder .playlist_ .playlistData {
@@ -302,7 +330,7 @@ header #library #playlistsHolder .playlist_ .playlistData .infoContent .playlist
   font-size: small;
 }
 header #library #playlistsHolder .playlist_ .playlistData .infoContent .playlistDataInfo button i {
-  color: #fff;
+  color: var(--white);
 }
 header #library #playlistsHolder .playlist_ .playlistData .infoContent .playlistDataInfo h5 {
   white-space: nowrap;
@@ -314,8 +342,8 @@ header #library #playlistsHolder .playlist_ .playlistData .playlistSpeaker {
   padding-right: 10px;
 }
 header #library #playlistsHolder .playlist_:hover {
-  background-color: #615e5e;
-  border-radius: 15px;
+  background-color: var(--black_hover);
+  border-radius: var(--border_radius);
 }
 
 #main {
@@ -324,8 +352,8 @@ header #library #playlistsHolder .playlist_:hover {
   height: 100%;
   margin-left: 5px;
   box-shadow: inset 0px 130px 160px 0px rgba(110, 23, 110, 0.65);
-  border-radius: 15px;
-  background-color: #1e1e1e;
+  border-radius: var(--border_radius);
+  background-color: var(--black_bg);
 }
 #main #mainSidebar {
   display: flex;
@@ -340,7 +368,7 @@ header #library #playlistsHolder .playlist_:hover {
 #main #mainSidebar #navigationHandler button {
   outline: none;
   border: none;
-  background-color: #000;
+  background-color: var(--dark_black);
   padding: 5px;
   border-radius: 50%;
   margin: 5px;
@@ -358,8 +386,8 @@ header #library #playlistsHolder .playlist_:hover {
 #main #mainSidebar #premium #account {
   padding: 10px;
   margin: 5px;
-  background: skyblue;
-  border-radius: 15px;
+  background: var(--blue);
+  border-radius: var(--border_radius);
 }
 #main #mainSidebar #premium #privateModeListening span,
 #main #mainSidebar #premium #upgrade span,
@@ -367,13 +395,13 @@ header #library #playlistsHolder .playlist_:hover {
   display: none;
 }
 #main #mainSidebar #premium #upgrade {
-  color: #000;
-  background-color: #fff;
+  color: var(--dark_black);
+  background-color: var(--white);
 }
 #main #mainSidebar #premium #account {
   outline: none;
   border: none;
-  background-color: #000;
+  background-color: var(--dark_black);
 }
 #main #mainScroller {
   display: flex;
@@ -384,6 +412,7 @@ header #library #playlistsHolder .playlist_:hover {
   max-height: calc(100vh - 160px);
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: var(--black_bg);
 }
 #main #mainScroller #greeting {
   margin: 15px;
@@ -405,7 +434,7 @@ header #library #playlistsHolder .playlist_:hover {
   align-items: center;
   margin: 5px 15px;
   border-radius: 10px;
-  background-color: rgba(55, 88, 221, 0.2392156863);
+  background-color: var(--playlist_bg);
 }
 #main #mainScroller #mainPlaylistHolder .playlist_main .imageHolder .img {
   width: 80px;
@@ -434,32 +463,40 @@ header #library #playlistsHolder .playlist_:hover {
   margin: 10px;
   font-size: 48px;
   border-radius: 50%;
-  background-color: #000000;
-  box-shadow: 0px 3px 3px #000;
+  background-color: var(--dark_black);
+  box-shadow: 0px 3px 3px var(--dark_black);
 }
 #main #mainScroller #mainPlaylistHolder .playlist_main .playlistData .playlist_PLayer div {
   margin-top: -10px;
 }
 #main #mainScroller #mainPlaylistHolder .playlist_main .playlistData .playlist_PLayer div i {
-  color: #129731;
+  color: var(--green_dark);
 }
 #main #mainScroller #mainPlaylistHolder .playlist_main .playlistData .playlist_PLayer:hover {
   height: 50px;
   width: 50px;
   font-size: 50px;
-  box-shadow: 0px 5px 5px #000;
+  box-shadow: 0px 5px 5px var(--dark_black);
 }
 #main #mainScroller #mainPlaylistHolder .playlist_main:hover {
-  background-color: rgba(46, 179, 46, 0.4078431373);
+  background-color: var(--playlist_hover_bg);
 }
 #main #mainScroller #mainPlaylistHolder .playlist_main:hover .playlist_PLayer {
   display: block;
+}
+#main #mainScroller hr {
+  width: 100%;
+  margin: 20px 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: transparent;
 }
 #main #mainScroller .suggestedPlaylistHolder {
   width: 100%;
   height: 300px;
   padding: 0px 10px;
-  margin-top: 25px;
+  margin-bottom: 15px;
 }
 #main #mainScroller .suggestedPlaylistHolder .suggestedPlayListHeader {
   display: flex;
@@ -479,20 +516,20 @@ header #library #playlistsHolder .playlist_:hover {
   overflow-x: auto;
 }
 #main #mainScroller .suggestedPlaylistHolder .playlistsStack .playlistCard {
-  width: 160px;
-  height: 235px;
-  border-radius: 15px;
-  background-color: #313432;
-  margin: 10px;
+  width: 180px;
+  height: 255px;
+  border-radius: var(--border_radius);
+  background-color: var(--black_state);
+  margin: 10px 15px;
   padding: 10px;
 }
 #main #mainScroller .suggestedPlaylistHolder .playlistsStack .playlistCard .playlistCardImage {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   margin-bottom: 10px;
   background: url("./images/spotifyDark.jpg");
   background-size: 100% 100%;
-  border-radius: 15px;
+  border-radius: var(--border_radius);
 }
 #main #mainScroller .suggestedPlaylistHolder .playlistsStack .playlistCard .playlistCardContent {
   width: 100%;
@@ -507,7 +544,10 @@ header #library #playlistsHolder .playlist_:hover {
   line-height: 18px;
   width: 100%;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--white);
+}
+#main #mainScroller .suggestedPlaylistHolder .playlistsStack .playlistCard:hover {
+  background-color: var(--black_hover);
 }
 
 .largerIcon {
@@ -522,7 +562,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #615e5e;
+  background: var(--black_bg);
   max-height: 150px;
 }
 footer #dataHandler {
@@ -534,8 +574,7 @@ footer #dataHandler {
 footer #dataHandler #dataImageHandlerDiv {
   width: 60px;
   height: 60px;
-  border-radius: 15px;
-  background-color: aquamarine;
+  border-radius: var(--border_radius);
   background-image: url("./images/spotifyDark.jpg");
   background-size: 100% 100%;
 }

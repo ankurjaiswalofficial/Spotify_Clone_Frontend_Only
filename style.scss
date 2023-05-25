@@ -1,8 +1,24 @@
+:root {
+    --blue: #1e90ff;
+    --green: #29bd4c;
+    --green_dark: #129731;
+    --white: #fff;
+    --dark_black: #000;
+    --black_state: #1f1f1f;
+    --black_hover: #3a3c3b;
+    --black_bg: #141313; //#181918;
+    --black_iconic: #302d2d;
+    --black_iconic_dark: #1c181c;
+    --border_radius: 15px;
+    --playlist_bg: #45474d3d;
+    --playlist_hover_bg: #2eb32e68;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--white);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     /* width */
@@ -19,23 +35,24 @@
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: rgb(54, 53, 53);
+        background: var(--black_state);
         border-radius: 10px;
     }
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: #5e5c5c;
+        background: var(--black_hover);
     }
 
     input[type="range"] {
         -webkit-appearance: none;
+        appearance: none;
         margin-right: 15px;
         width: 200px;
         height: 0.3rem;
         background: rgb(39, 39, 39);
         border-radius: 5px;
-        background-image: linear-gradient(#fff, #fff);
+        background-image: linear-gradient(var(--white), var(--white));
         background-size: 7% 100%;
         background-repeat: no-repeat;
     }
@@ -43,51 +60,55 @@
     /* Input Thumb */
     input[type="range"]::-webkit-slider-thumb {
         -webkit-appearance: none;
+        appearance: none;
         height: 0.75rem;
         width: 0.75rem;
         border-radius: 50%;
-        background: #fff;
+        background: var(--white);
         cursor: pointer;
     }
 
     input[type="range"]::-moz-range-thumb {
         -webkit-appearance: none;
+        appearance: none;
         height: 0.8rem;
         width: 0.8rem;
         border-radius: 50%;
-        background: #fff;
+        background: var(--white);
         cursor: pointer;
     }
 
     input[type="range"]::-ms-thumb {
         -webkit-appearance: none;
+        appearance: none;
         height: 0.8rem;
         width: 0.8rem;
         border-radius: 50%;
-        background: #fff;
+        background: var(--white);
         cursor: pointer;
     }
 
     input[type="range"]::-webkit-slider-thumb:hover {
-        background: #29bd4c;
+        background: var(--green);
     }
 
     input[type="range"]::-moz-range-thumb:hover {
-        background: #29bd4c;
+        background: var(--green);
     }
 
     input[type="range"]::-ms-thumb:hover {
-        background: #29bd4c;
+        background: var(--green);
     }
 
     input[type="range"]:hover {
 
-        background-image: linear-gradient(#29bd4c, #29bd4c);
+        background-image: linear-gradient(var(--green), var(--green));
     }
 
     /* Input Track */
     input[type=range]::-webkit-slider-runnable-track {
         -webkit-appearance: none;
+        appearance: none;
         box-shadow: none;
         border: none;
         background: transparent;
@@ -95,6 +116,7 @@
 
     input[type=range]::-moz-range-track {
         -webkit-appearance: none;
+        appearance: none;
         box-shadow: none;
         border: none;
         background: transparent;
@@ -102,6 +124,7 @@
 
     input[type="range"]::-ms-track {
         -webkit-appearance: none;
+        appearance: none;
         box-shadow: none;
         border: none;
         background: transparent;
@@ -109,7 +132,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: var(--dark_black);
 }
 
 #MainContainer {
@@ -149,8 +172,8 @@ header {
 
     #pageNav {
         width: 100%;
-        border-radius: 15px;
-        background-color: #1e1e1e;
+        border-radius: var(--border_radius);
+        background-color: var(--black_bg);
         margin: 5px 0px;
         padding: 0px 20px;
         height: 120px;
@@ -176,8 +199,8 @@ header {
         width: 100%;
         height: 100%;
         max-height: calc(100%);
-        border-radius: 15px;
-        background-color: #1e1e1e;
+        border-radius: var(--border_radius);
+        background-color: var(--black_bg);
         margin: 5px 0px 0px 0px;
         justify-content: flex-start;
 
@@ -186,7 +209,7 @@ header {
             // height: 20%;
             padding: 5px;
             top: 0;
-            // box-shadow: 0px 10px 30px #000;
+            // box-shadow: 0px 10px 30px var(--dark_black);
 
             #libraryHeader {
                 display: flex;
@@ -216,7 +239,7 @@ header {
                 .scroller {
                     i {
                         // padding: 10px;
-                        background-color: #000000;
+                        background-color: var(--black_iconic);
                         padding: 10px 12px;
                         border-radius: 50%;
                         font-weight: bolder;
@@ -234,9 +257,9 @@ header {
                     span {
                         text-align: center;
                         padding: 8px 10px;
-                        background: #000000;
+                        background: var(--black_iconic);
                         margin: 5px;
-                        border-radius: 15px;
+                        border-radius: var(--border_radius);
                         font-size: 14px;
                     }
                 }
@@ -253,7 +276,7 @@ header {
                         display: block;
                         outline: none;
                         border: none;
-                        background-color: #000000;
+                        background-color: var(--black_iconic);
                         border-radius: 50%;
                         padding: 10px;
                         cursor: pointer;
@@ -263,8 +286,8 @@ header {
                         display: none;
                         justify-content: center;
                         align-items: center;
-                        background-color: #000000;
-                        border-radius: 15px;
+                        background-color: var(--black_iconic);
+                        border-radius: var(--border_radius);
                         padding: 5px 5px;
 
                         i {
@@ -274,20 +297,19 @@ header {
                         input {
                             margin: 0;
                             padding: 5px;
-                            background-color: #000;
+                            background-color: var(--black_iconic);
                             outline: none;
                             border: none;
-                            border-radius: 15px;
-                            color: #fff;
+                            border-radius: var(--border_radius);
+                            color: var(--white);
                         }
 
                         input::placeholder {
-                            color: #fff;
+                            color: var(--white);
                         }
                     }
                 }
 
-                #playlistSorter {}
             }
         }
 
@@ -310,12 +332,14 @@ header {
                 align-items: center;
                 padding: 5px;
                 margin: 5px;
+                border-radius: var(--border_radius);
+                background-color: var(--black_state);
 
                 .imageHolder {
                     img {
                         width: 60px;
                         height: 60px;
-                        border-radius: 15px;
+                        border-radius: var(--border_radius);
                         margin-bottom: 0;
                     }
                 }
@@ -351,7 +375,7 @@ header {
                                 font-size: small;
 
                                 i {
-                                    color: #fff;
+                                    color: var(--white);
                                 }
                             }
 
@@ -372,8 +396,8 @@ header {
             }
 
             .playlist_:hover {
-                background-color: #615e5e;
-                border-radius: 15px;
+                background-color: var(--black_hover);
+                border-radius: var(--border_radius);
             }
         }
 
@@ -389,8 +413,8 @@ header {
     -webkit-box-shadow: inset 0px 130px 160px 0px rgba(110, 23, 110, 0.65);
     -moz-box-shadow: inset 0px 130px 160px 0px rgba(110, 23, 110, 0.65);
     box-shadow: inset 0px 130px 160px 0px rgba(110, 23, 110, 0.65);
-    border-radius: 15px;
-    background-color: #1e1e1e;
+    border-radius: var(--border_radius);
+    background-color: var(--black_bg);
 
     #mainSidebar {
         display: flex;
@@ -405,7 +429,7 @@ header {
             button {
                 outline: none;
                 border: none;
-                background-color: #000;
+                background-color: var(--dark_black);
                 padding: 5px;
                 border-radius: 50%;
                 margin: 5px;
@@ -426,8 +450,8 @@ header {
             #account {
                 padding: 10px;
                 margin: 5px;
-                background: skyblue;
-                border-radius: 15px;
+                background: var(--blue);
+                border-radius: var(--border_radius);
 
                 span {
                     display: none;
@@ -435,14 +459,14 @@ header {
             }
 
             #upgrade {
-                color: #000;
-                background-color: #fff;
+                color: var(--dark_black);
+                background-color: var(--white);
             }
 
             #account {
                 outline: none;
                 border: none;
-                background-color: #000;
+                background-color: var(--dark_black);
             }
         }
     }
@@ -456,6 +480,7 @@ header {
         max-height: calc(100vh - 160px);
         overflow-y: auto;
         overflow-x: hidden;
+        background-color: var(--black_bg);
 
         #greeting {
             margin: 15px;
@@ -469,10 +494,6 @@ header {
             align-items: center;
             flex-wrap: wrap;
 
-            // @media only screen and (max-width: 1114px) {
-            //     justify-content: center;
-            // }
-
             .playlist_main {
                 width: 100%;
                 max-width: 350px;
@@ -482,7 +503,7 @@ header {
                 align-items: center;
                 margin: 5px 15px;
                 border-radius: 10px;
-                background-color: #3758dd3d;
+                background-color: var(--playlist_bg);
 
                 .imageHolder {
                     .img {
@@ -515,14 +536,14 @@ header {
                         margin: 10px;
                         font-size: 48px;
                         border-radius: 50%;
-                        background-color: #000000;
-                        box-shadow: 0px 3px 3px #000;
+                        background-color: var(--dark_black);
+                        box-shadow: 0px 3px 3px var(--dark_black);
 
                         div {
                             margin-top: -10px;
 
                             i {
-                                color: #129731;
+                                color: var(--green_dark);
                             }
                         }
                     }
@@ -531,13 +552,13 @@ header {
                         height: 50px;
                         width: 50px;
                         font-size: 50px;
-                        box-shadow: 0px 5px 5px #000;
+                        box-shadow: 0px 5px 5px var(--dark_black);
                     }
                 }
             }
 
             .playlist_main:hover {
-                background-color: #2eb32e68;
+                background-color: var(--playlist_hover_bg);
 
                 .playlist_PLayer {
                     display: block;
@@ -545,11 +566,20 @@ header {
             }
         }
 
+        hr {
+            width: 100%;
+            margin: 20px 10px;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            color: transparent;
+        }
+
         .suggestedPlaylistHolder {
             width: 100%;
             height: 300px;
             padding: 0px 10px;
-            margin-top: 25px;
+            margin-bottom: 15px;
 
             .suggestedPlayListHeader {
                 display: flex;
@@ -571,20 +601,20 @@ header {
                 overflow-x: auto;
 
                 .playlistCard {
-                    width: 160px;
-                    height: 235px;
-                    border-radius: 15px;
-                    background-color: #313432;
-                    margin: 10px;
+                    width: 180px;
+                    height: 255px;
+                    border-radius: var(--border_radius);
+                    background-color: var(--black_state);
+                    margin: 10px 15px;
                     padding: 10px;
 
                     .playlistCardImage {
-                        width: 140px;
-                        height: 140px;
+                        width: 160px;
+                        height: 160px;
                         margin-bottom: 10px;
                         background: url("./images/spotifyDark.jpg");
                         background-size: 100% 100%;
-                        border-radius: 15px;
+                        border-radius: var(--border_radius);
                     }
 
                     .playlistCardContent {
@@ -601,10 +631,14 @@ header {
                             line-height: 18px;
                             width: 100%;
                             font-weight: bold;
-                            color: #ffffff;
+                            color: var(--white);
                             // text-overflow: ellipsis;
                         }
                     }
+                }
+
+                .playlistCard:hover {
+                    background-color: var(--black_hover);
                 }
             }
         }
@@ -625,7 +659,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #615e5e;
+    background: var(--black_bg);
     max-height: 150px;
 
     #dataHandler {
@@ -637,8 +671,7 @@ footer {
         #dataImageHandlerDiv {
             width: 60px;
             height: 60px;
-            border-radius: 15px;
-            background-color: aquamarine;
+            border-radius: var(--border_radius);
             background-image: url("./images/spotifyDark.jpg");
             background-size: 100% 100%;
         }
@@ -677,7 +710,7 @@ footer {
         width: 80%;
         height: 70px;
 
-        // box-shadow: -50px 0px 30px 0px #000;
+        // box-shadow: -50px 0px 30px 0px var(--dark_black);
         #handleBar {
             width: 70%;
             display: flex;
@@ -738,7 +771,6 @@ footer {
             }
 
             input {
-                // width: 100%;
                 max-width: 100px;
             }
         }
