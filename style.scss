@@ -310,6 +310,66 @@ header {
                     }
                 }
 
+                #playlistSorter{
+                    .select {
+                        position: relative;
+                        min-width: 200px;
+                    }
+                    .select svg {
+                        position: absolute;
+                        right: 12px;
+                        top: calc(50% - 3px);
+                        width: 10px;
+                        height: 6px;
+                        stroke-width: 2px;
+                        stroke: var(--white);
+                        fill: none;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        pointer-events: none;
+                      }
+                      .select select {
+                        -webkit-appearance: none;
+                        appearance: none;
+                        padding: 5px 40px 5px 12px;
+                        width: 100%;
+                        border: 1px solid #e8eaed;
+                        border-radius: 5px;
+                        background: #fff;
+                        box-shadow: 0 1px 3px -2px #9098a9;
+                        cursor: pointer;
+                        color: var(--white);
+                        font-family: inherit;
+                        font-size: 14px;
+                        font-weight: 650;
+                        background-color: var(--black_iconic);
+                        outline: none;
+                        border: none;
+                        transition: all 150ms ease;
+                      }
+                      .select select option {
+                        color: var(--white);
+                      }
+                      .select select option[value=""][disabled] {
+                        display: none;
+                      }
+                      .select select:focus {
+                        outline: none;
+                        border-color: var(--blue);
+                      }
+                      .select select:hover + svg {
+                        stroke: var(--blue);
+                      }
+                      .sprites {
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        pointer-events: none;
+                        user-select: none;
+                      }
+                      
+                }
+
             }
         }
 
